@@ -1,0 +1,36 @@
+/* Reset and Base Styles */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #001F3F; color: #fff; line-height: 1.6; }
+
+/* Header */
+header { background: #333333; height: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 24px; font-weight: bold; color: #fff; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: #fff; text-decoration: none; transition: color 0.3s; }
+.nav-links a:hover { color: #00BFFF; }
+.icons { display: flex; gap: 20px; font-size: 20px; }
+.icons .cart .badge { background: #FF0000; border-radius: 50%; padding: 2px 6px; font-size: 12px; }
+
+/* Hero */
+.hero { background: #001F3F; height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; }
+.hero-content { max-width: 800px; }
+.hero h1 { font-size: 48px; margin-bottom: 20px; }
+.hero p { font-size: 24px; margin-bottom: 40px; }
+.ctas { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.btn { padding: 12px 24px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: transform 0.2s; }
+.btn:hover { transform: scale(1.05); }
+.primary { background: #00BFFF; color: #fff; }
+.secondary { background: #FFD700; color: #000; }
+
+/* Sections */
+section { padding: 60px 20px; text-align: center; }
+h2 { font-size: 32px; color: #00BFFF; margin-bottom: 40px; }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Hamburger menu later */
+    .hero { height: 100vh; padding: 20px; }
+    .hero h1 { font-size: 32px; }
+    .hero p { font-size: 18px; }
+    .ctas { flex-direction: column; align-items: center; }
+}
